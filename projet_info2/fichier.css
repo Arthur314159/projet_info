@@ -1,0 +1,32 @@
+.Questions {
+    font-size: 1rem;
+    size:auto;
+
+
+} 
+.reponses {
+    font-size:1rem;
+    size:auto;
+    
+}
+.page_apres {
+    background-color: grey;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.premiere_page {
+    background-color: grey;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+h1 {
+    font-size:2rem;
+    color:black;
+    background-color:grey;
+    margin-left:45%;
+    padding:30px 30px;
+    border-radius: 5px;
+    
+}
