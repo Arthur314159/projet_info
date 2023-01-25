@@ -132,4 +132,3 @@ function bas_droit(){
     document.getElementById("rep4").innerHTML=questions[i].option[3];
     return(i)
 }
- 
