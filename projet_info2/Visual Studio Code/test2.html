@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemple de bouton</title>
+</head>
+<body>
+  <button id="sorciere" onclick="maFonction()">Sorcière</button>
+  <button id="guerrier">Guerrier</button>
+  <button id="elfe">Elfe</button>
+  <button id="dragon">Dragon</button>
+  <p id="response"></p>
+
+
+ 
+  <script>
+    function maFonction(){
+      var buttons = document.getElementById("sorciere");
+      var response = document.getElementById("response");
+      response.innerHTML = "Merci d'avoir cliqué sur le bouton!";  
+    }

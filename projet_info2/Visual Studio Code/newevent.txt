@@ -1,0 +1,11 @@
+var age = prompt("Quel est votre âge ?");
+if(age >= 18){
+  var vote = confirm("Voulez-vous voter ?");
+  if(vote == true){
+    alert("Merci de voter !");
+  }else{
+    alert("D'accord, vous n'avez pas à voter.");
+  }
+}else{
+  alert("Vous n'êtes pas encore majeur, vous ne pouvez pas voter.");
+}

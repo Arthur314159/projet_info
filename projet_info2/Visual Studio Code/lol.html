@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Quiz</title>
+    </head>
+    <body>
+        <h1>Quiz sur les animaux</h1>
+        <form>
+            <label for="question1">Quel est le plus grand animal du monde ?</label>
+            <input type="radio" id="question1" name="question1" value="baleine">Baleine<br>
+            <input type="radio" id="question1" name="question1" value="éléphant">Éléphant<br>
+            <input type="radio" id="question1" name="question1" value="girafe">Girafe<br>
+
+            <label for="question2">Quel animal est capable de voler ?</label>
+            <input type="radio" id="question2" name="question2" value="pingouin">Pingouin<br>
+            <input type="radio" id="question2" name="question2" value="chauve-souris">Chauve-souris<br>
+            <input type="radio" id="question2" name="question2" value="tortue">Tortue<br>
+        </form>
+        <button onclick="submitQuiz()">Soumettre</button>
+        <p id="avancement"></p>
+        <script>
+        function submitQuiz() {
+            var totalQuestions = 2;
+            var correctAnswers = 0;
+            if (document.querySelector('input[name="question1"]:checked').value === "baleine") {
+                correctAnswers++;
+                }
+                if (document.querySelector('input[name="question2"]:checked').value === "chauve-souris") {
+                    correctAnswers++;
+                    }
+                    document.getElementById("avancement").innerHTML = "Vous avez répondu correctement à " + correctAnswers + " sur " + totalQuestions + " questions.";
+                    }
+        </script>
+    </body>
+</html>
