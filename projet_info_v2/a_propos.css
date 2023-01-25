@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+  }
+
+  .img-border-radius {
+    height: 200px;
+    border-radius: 50%;
+  }
+
+body{
+    background-color: #103455;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23103455' cx='50' cy='0' r='50'/%3E%3Cg fill='%23173d5d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%231e4566' cx='50' cy='100' r='50'/%3E%3Cg fill='%23254e6e' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%232c5777' cx='50' cy='200' r='50'/%3E%3Cg fill='%2333607f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b6a88' cx='50' cy='300' r='50'/%3E%3Cg fill='%23427390' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%234a7d99' cx='50' cy='400' r='50'/%3E%3Cg fill='%235287a1' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%235b90aa' cx='50' cy='500' r='50'/%3E%3Cg fill='%23639ab2' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%236ca4bb' cx='50' cy='600' r='50'/%3E%3Cg fill='%2375aec3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%237eb8cc' cx='50' cy='700' r='50'/%3E%3Cg fill='%2388c3d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2391cddd' cx='50' cy='800' r='50'/%3E%3Cg fill='%239bd7e5' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a5e2ee' cx='50' cy='900' r='50'/%3E%3Cg fill='%23afecf6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23BAF7FF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+margin-bottom: 4px;
+font-size: 3àpx;
+font-family:'Courgette', cursive;
+}
+
+h1{
+    margin-bottom: 4px;
+    font-size: 60px;
+    font-family:'Courgette', cursive;
+    text-decoration: underline;
+}
+
+.coline{
+    
+    width: 70%;
+    margin-left: 10px;
+    margin-top: -200px;
+    text-align:right;
+}
+
+.tanguy{
+    width: 100%;
+    margin-left: -450px;
+    margin-top: -200px;
+    text-align:right;
+}
+
+.alex{
+    width: 70%;
+    margin-left: -350px;
+    margin-top: -200px;
+    text-align:right;
+}
+
+.celia{
+    width: 50%;
+    margin-left: 250px;
+    margin-top: 10px;
+    text-align:right;
+}
+.oumou{
+    width: 100%;
+    margin-left: -630px;
+    margin-top: -200px;
+    text-align:right;
+}
+
+.melo{
+    width: 50%;
+    margin-left: 270px;
+    margin-top: 0px;
+    text-align:right;
+}
+
+.loth{
+    width: 50%;
+    margin-left: -200px;
+    margin-top: 20px;
+    text-align:right;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding-right: 40px;
+    text-align: right;
+    list-style-type: none;
+  }
+   ul li {
+    margin-right: 10px;
+   }
+  
+   ul li a {
+    position: relative;
+    padding: 10px 20px;
+    text-decoration:none ;
+    font-size: 30px;
+    font-weight: 10;
+    color:rgb(255, 255, 255);
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+  
+   ul li a::after{
+    content: '';
+    background:#ffffff;
+    position : absolute;
+    bottom : 0;
+    right: 0;
+    width: 0;
+    height:3px ;
+    transform: translate(-50%,-5px);
+    transition: 0.3s;
+   }
+  
+   ul li a:hover:after{
+    width : 38%
+   }
