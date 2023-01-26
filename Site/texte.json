@@ -1,18 +1,39 @@
-
-    {"questions" :{
-        "question1": "<h1>Quel est votre nom ?</h1>",
-        "Question2": "Quel est votre âge ?",
-        "question3":"Quelle est votre école"
+{
+  "doc": ["idb1","idb2"],
+  "bloc": {
+    "idb1": [ "idsb1", "idsb3" ],
+    "idb2": [ "idsb2", "idsb4" ]
+  },
+  "sb": {
+    "idsb1": {
+      "type": "QCM_1",
+      "content": {
+        "question": "Quel personnage souhaitez-vous interpréter",
+        "reponse": [],
+        "FB": [],
+        "bonne_reponse": []
+      }
     },
-    "reponses":  {
-        "reponse1":"18",
-        "reponse2":"20",
-        "reponse3":"21",
-        "reponse4":"ISEN",
-        "reponse5":"Hei",
-        "reponse6":"ISA",
-        "reponse7":"Tanguy",
-        "reponse8":"Arthur",
-        "reponse9":"Coline"
-
-    }}
+    "idsb2": {
+      "type": "texte",
+      "content": {
+        "texte": "aefqc"
+      }
+    },
+    "idsb3": {
+      "type": "titre",
+      "content": {
+        "texte": "qekghfv"
+      }
+    },
+    "idsb4": {
+      "type": "QCM_M",
+      "content": {
+        "question": "azefazg",
+        "reponse": [],
+        "FB": [],
+        "bonne_reponse": []
+      }
+    }
+  }
+}
