@@ -5,7 +5,7 @@
         <ul>
             <li><a href="accueil.html">Accueil</a></li>
             <li><a href="a_propos.html">A propos</a></li>
-            <li><a href="questionnaire.html">Aventure</a></li>
+            <li><a href="synopsis.html">Aventure</a></li>
         </ul>
     </nav>
     <meta charset="UTF-8">
@@ -13,10 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./questionnaire.css">
     <script src="./questionnaire.js" defer></script>
-    <title>Quiz</title>
-    <h1>Questionnaire:</h1><br>
+    <title>Aventure</title>
+    
 </head>
 <body>
+    <div class="entête">
+        <h1>Aux royaumes de SpiritValley et Ceresia :</h1>
+        <img src="images/baguetteg.png" class="baguetteg" alt=""><img src="images/baguetted.png" class="baguetted" alt="">
+    </div>
     <div class="wrapper"> 
         <h3>Question <span id="num_question"></span>  :</h3>
         <p id="nom_question"></p>
@@ -28,7 +32,10 @@
             <button class="reponse" onclick="bas_droit()"><i id="rep4"></i></button>
         </div>
         <div class="score">
-            Score : <span id="score"></span>
+            <span id="score"></span>
+        </div>
+        <div class="précédent">
+            <img class="précédent" src="images/précédent.png" onclick="précédent()"><!--<i id="rep4"></i>--></button></span>
         </div>
     </div>
     <label for="file">Progression :</label>

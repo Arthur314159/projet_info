@@ -18,7 +18,7 @@ let questions =[
             "à droite",
             "avec son chat",
             "avec le max",
-            "elle chie",
+            "elle est pas la",
         ]
     },
     {
@@ -28,7 +28,7 @@ let questions =[
         option : [
             "chez elle",
             "elle mange un burger",
-            "elle chie",
+            "elle est pas là",
             "à la salle",
         ]
     },
@@ -49,13 +49,13 @@ let questions =[
         reponse: "je sais pas",
         option : [
             "je sais pas",
-            "tg",
+            "bof",
             "oui",
             "non",
         ]
     },
 ];
-let compteurScore=1;
+/*let compteurScore=1;*/
 /*let score= document.getElementById("score");*/
 let compteurQuestion = 1;
 num_question.textContent=compteurQuestion;
@@ -73,9 +73,9 @@ function haut_gauche(){
     compteurQuestion++;
     num_question.textContent=compteurQuestion;
     progression.value=progression.value+10; /*barre de progression*/
-    /*document.getElementById("n°question").innerHTML=num_question[i];*/
+    /*document.getElementById("n°question").innerHTML=num_question[i];
     score.textContent=compteurScore;
-    compteurScore++;
+    compteurScore++;*/
     document.getElementById("nom_question").innerHTML=questions[i].question;
     document.getElementById("rep1").innerHTML=questions[i].option[0];
     document.getElementById("rep2").innerHTML=questions[i].option[1];
@@ -90,9 +90,9 @@ function haut_droit(){
     compteurQuestion++;
     num_question.textContent=compteurQuestion;
     progression.value=progression.value+10; /*barre de progression*/
-    /*document.getElementById("n°question").innerHTML=num_question[i];*/
+    /*document.getElementById("n°question").innerHTML=num_question[i];
     score.textContent=compteurScore;
-    compteurScore++;
+    compteurScore++;*/
     document.getElementById("nom_question").innerHTML=questions[i].question;
     document.getElementById("rep1").innerHTML=questions[i].option[0];
     document.getElementById("rep2").innerHTML=questions[i].option[1];
@@ -106,9 +106,9 @@ function bas_gauche(){
     compteurQuestion++;
     num_question.textContent=compteurQuestion;
     progression.value=progression.value+10; /*barre de progression*/
-    /*document.getElementById("n°question").innerHTML=num_question[i];*/
+    /*document.getElementById("n°question").innerHTML=num_question[i];
     score.textContent=compteurScore;
-    compteurScore++;
+    compteurScore++;*/
     document.getElementById("nom_question").innerHTML=questions[i].question;
     document.getElementById("rep1").innerHTML=questions[i].option[0];
     document.getElementById("rep2").innerHTML=questions[i].option[1];
@@ -123,8 +123,8 @@ function bas_droit(){
     num_question.textContent=compteurQuestion;
     progression.value=progression.value+10; /*barre de progression*/
     /*document.getElementById("n°question").innerHTML=num_question[i];*/
-    score.textContent=compteurScore;
-    compteurScore++;
+    /*score.textContent=compteurScore;
+    compteurScore++;*/
     document.getElementById("nom_question").innerHTML=questions[i].question;
     document.getElementById("rep1").innerHTML=questions[i].option[0];
     document.getElementById("rep2").innerHTML=questions[i].option[1];
@@ -133,3 +133,18 @@ function bas_droit(){
     return(i)
 }
  
+function précédent(){
+    i--;
+    compteurQuestion--;
+    num_question.textContent=compteurQuestion;
+    progression.value=progression.value-10; /*barre de progression*/
+    /*document.getElementById("n°question").innerHTML=num_question[i];*/
+    /*score.textContent=compteurScore;
+    compteurScore--;*/
+    document.getElementById("nom_question").innerHTML=questions[i].question;
+    document.getElementById("rep1").innerHTML=questions[i].option[0];
+    document.getElementById("rep2").innerHTML=questions[i].option[1];
+    document.getElementById("rep3").innerHTML=questions[i].option[2];
+    document.getElementById("rep4").innerHTML=questions[i].option[3];
+    return(i)
+}

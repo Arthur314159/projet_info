@@ -212,4 +212,41 @@
     width: 150px;
   }
 
+  .etoiles1{
+    width: 150px;
+    margin-left: -100px;
+    margin-bottom: -50px;
+
+    animation-name: flo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+  }
+  @keyframes flo{
+    50%{
+      transform: translateY(30px);
+    }
+  }
+  
+  
+
+  .etoiles2{
+    width:150px;
+    margin-left :500px ;
+    margin-top: -100px;
+    margin-bottom: -50px;
+
+    animation-name: flo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+  }
+  @keyframes flo{
+    50%{
+      transform: translateY(30px);
+    }
+  }
+
   
