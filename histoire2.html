@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Questionnaire</title>
+        <!-- <button type="button" onclick="onceUpponATime()">Entrer dans le jeu</button>
+        <p id="output"></p> -->
+        <script src="newstory2.js"></script>
+    </head>
+    <body>
+        <h1>Quel personnage souhaitez-vous interpréter ?</h1>
+        <form>
+            <input type="radio" name="perso" id="perso1" value="sorciere" onclick="newstory2(value)"> Sorciere<br>
+           
+            <!-- <input type="radio" name="perso" id="perso1" onclick="showNextQuestion(this.value)"> Non<br> -->
+       
+            <input type="radio" name="perso" id="perso2" value="guerrier" onclick="newstory2(value)"> Guerrier<br>
+            <!-- <input type="radio" name="cats" value="non" onclick="showNextQuestion(this.value)"> Non<br> -->
+       
+            <input type="radio" name="perso" id="perso3" value="dragon" onclick="newstory2(value)"> Dragon<br>
+            <!-- <input type="radio" name="cats" value="non" onclick="showNextQuestion(this.value)"> Non<br> -->
+     
+            <input type="radio" name="perso" id="perso4" value="elfe" onclick="newstory2(value)"> Elfe<br>
+            <!-- <input type="radio" name="cats" value="non" onclick="showNextQuestion(this.value)"> Non<br> -->
+        </form>
+
+
+        <div id="question_1" style="display: none;">
+            <h1>Combien de potions avez vous?</h1>
+            <form>
+                <input type="text" name="potions_count" onclick="newstory2(value)">
+            </form>
+            <!-- <div id="question_5" style="display: none;">
+                <h1>Etes vous prêt pour le combat?</h1>
+                <form>
+                    <input type="text" name="test_count">
+                </form>
+            </div> -->
+        </div>
+
+
+        <div id="question_2" style="display: none;">
+            <h1>Etes vous prêt pour le combat?</h1>
+            <form>
+                <input type="text" name="soldier_count">
+            </form>
+        </div>
+   
+   
+        <div id="question_3" style="display: none;">
+            <h1>Combien de personne avez vous brulé?</h1>
+            <form>
+                <input type="text" name="people_count">
+            </form>
+        </div>
+   
+       
+       
+        <div id="question_4" style="display: none;">
+            <h1>Prete à aider le dragon?</h1>
+            <form>
+                <input type="text" name="people_count">
+            </form>
+        </div>
+    </body>
+
+    <h1>Un siecle apres la fin de la guerre opposant les royaumes de SpiritValley et Ceresia, une nouvelle épopée est sur le point de commencer.
+        Il s'agit de votre épopée ! Vous vous apretez à débuter une nouvelle aventure dans un monde fantastique où dragons, sorcières et elfes y ont toute leur place.
+        Mais prenez garde, les bois et les montagnes de SpiritValley regorgent de dangers en tout genre.</h1>
+
+    
+
+</html>
